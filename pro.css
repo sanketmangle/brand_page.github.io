@@ -1,0 +1,113 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+.nav-item a:hover {
+    border-bottom: 3px solid black;
+    color:black;
+}
+.css-1hd7rf {
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: 24px;
+    overflow: hidden;
+    align-items: center;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Services Section */
+.services {
+    width: 100%;
+    max-width: 1200px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 8px auto 0;
+    margin-top: 8px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+.heading {
+    font-family: Cera;
+    width: 100%;
+    max-width: 1200px;
+    font-size: 1.7143rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 0;
+    margin-top: 56px;
+    padding-right: 15px;
+    text-align: left;
+}
+.first {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: column;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    justify-items: stretch;
+    margin: auto;
+}
+.properties {
+    display: inline-block;
+    margin: 0px 24px 10px 0px;
+    margin-top: 0px;
+    margin-right: 16px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    border-radius: 3px;
+    line-height: 0;
+    transition: box-shadow 0.3s ease 0s;
+    transition-property: box-shadow;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-thickness: initial;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+    width: calc((100% - 48px) / 3);
+}
+
+
+.center{
+    text-align: center;
+    color: #fff;
+    background-color: hotpink;
+}
