@@ -35,9 +35,10 @@ html{
     justify-content: center;
     align-items: center;
 }
-
-
-
+#home img{
+    width: 1515px; 
+    height: 454.896px;
+}
 /* Services Section */
 .services {
     width: 100%;
@@ -110,4 +111,35 @@ html{
     text-align: center;
     color: #fff;
     background-color: hotpink;
+}
+
+@media (max-width: 760px){
+    .center{
+        background-color: black;
+        text-align: center;
+        font-size: 12px;
+    }
+    .services {
+        display: block;
+    }
+    .services img {
+        height: auto;
+        width: 100%;
+    }
+    .navbar-brand{
+        flex-direction: column;
+        width: 100px;
+    }
+    
+    #home{
+        display: block;
+        justify-content: left;
+        padding: 26px 6px
+        }
+        
+    #home img{
+        height: 432px;
+        width: 351px;
+    }
+    
 }
