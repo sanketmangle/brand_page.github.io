@@ -17,6 +17,45 @@ html {
   color: black;
 }
 
+.container{
+  position: relative;
+  width: 100%;
+}
+
+.slide img{
+  width: 100%;
+}
+
+.arrow{
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  background-color: rgba(240, 248, 255, 0.774);
+  padding: 8px 18px;
+  border-radius: 50%;
+}
+
+.next{
+  right: 10px;
+}
+.prev{
+  left: 10px;
+}
+.caption{
+  color: rgba(255, 255, 255, 0.685);
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.397);
+  padding: 5px;
+}
+
+.slide{
+  display: none;
+}
 .css-1hd7rf {
   position: relative;
   background-color: #000;
@@ -27,11 +66,11 @@ html {
   align-items: center;
 }
 
-.burger{
+.burger {
   display: none;
 }
 
-.line{
+.line {
   width: 30px;
   height: 4px;
   background-color: black;
@@ -47,10 +86,10 @@ html {
   justify-content: center;
   align-items: center;
 }
-#home img {
+/* #home img {
   width: 1515px;
   height: 454.896px;
-}
+} */
 /* Services Section */
 .services {
   width: 100%;
@@ -154,104 +193,110 @@ html {
   background-color: hotpink;
 }
 
-
-.show-btn{
+.show-btn {
   background: local;
   padding: 0px 7px;
   color: transparent;
   cursor: pointer;
 }
 
-.show-btn, .containern{
+.show-btn,
+.containern {
   position: absolute;
   top: 48%;
   left: 50%;
   border-radius: 22px;
   transform: translate(-50%, -50%);
 }
- 
-input[type="checkbox"]{
+
+input[type="checkbox"] {
   display: none;
 }
-.containern{
+.containern {
   display: none;
   background: #fff;
   width: 410px;
   padding: 30px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
-#show:checked ~ .containern{
+#show:checked ~ .containern {
   display: block;
 }
-.containern .close-btn{
+.containern .close-btn {
   position: absolute;
   right: 20px;
   top: 15px;
   font-size: 18px;
   cursor: pointer;
 }
-.containern .close-btn:hover{
+.containern .close-btn:hover {
   color: #3498db;
 }
-.containern .text{
+.containern .text {
   font-size: 35px;
   font-weight: 600;
   text-align: center;
-  color: #3498db
+  color: #3498db;
 }
-.containern form{
+.containern form {
   margin-top: -20px;
 }
-.containern form .data{
+.containern form .data {
   height: 45px;
   width: 100%;
   margin: 40px 0;
 }
-form .data label{
+form .data label {
   font-size: 18px;
-  color: #3498db
+  color: #3498db;
 }
-form .data input{
+form .data input {
   height: 100%;
   width: 100%;
   padding-left: 10px;
   font-size: 17px;
   border: 1px solid silver;
 }
-form .data input:focus{
+form .data input:focus {
   border-color: #3498db;
   border-bottom-width: 2px;
 }
-form .forgot-pass{
+form .forgot-pass {
   margin-top: -8px;
 }
-form .forgot-pass a{
+form .forgot-pass a {
   color: #3498db;
   text-decoration: none;
 }
-form .forgot-pass a:hover{
+form .forgot-pass a:hover {
   text-decoration: underline;
 }
-form .btn{
+form .btn {
   margin: 30px 0;
   height: 45px;
   width: 100%;
   position: relative;
   overflow: hidden;
 }
-form .btn .inner{
+form .btn .inner {
   height: 100%;
   width: 300%;
   position: absolute;
   left: -100%;
   z-index: -1;
-  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  background: -webkit-linear-gradient(
+    right,
+    #56d8e4,
+    #9f01ea,
+    #56d8e4,
+    #9f01ea
+  );
   transition: all 0.4s;
 }
-form .btn:hover .inner{
+form .btn:hover .inner {
   left: 0;
 }
-form .btn button{
+form .btn button {
   height: 100%;
   width: 100%;
   background: none;
@@ -263,18 +308,16 @@ form .btn button{
   letter-spacing: 1px;
   cursor: pointer;
 }
-form .signup-link{
+form .signup-link {
   text-align: center;
 }
-form .signup-link a{
+form .signup-link a {
   color: #3498db;
   text-decoration: none;
 }
-form .signup-link a:hover{
+form .signup-link a:hover {
   text-decoration: underline;
 }
-
-
 
 @media (max-width: 560px) {
   .center {
@@ -323,17 +366,17 @@ form .signup-link a:hover{
     margin-bottom: 19px;
   }
 
-  .burger{
+  .burger {
     display: block;
   }
-  .collapse.responsive{
+  .collapse.responsive {
     width: 100%;
     height: 80vh;
     background-color: black;
     position: relative;
   }
 
-  .collapse.responsive ul li{
+  .collapse.responsive ul li {
     float: none;
     display: block;
     text-align: center;
@@ -354,44 +397,44 @@ form .signup-link a:hover{
 }
 
 @media (max-width: 370px) {
-    .Newadd {
-      margin-left: 109px;
-    }
-  
-    .Newaddimg {
-      margin-left: 21px;
-    }
-  
-    .navbar-brand {
-      width: 302px;
-    }
+  .Newadd {
+    margin-left: 109px;
   }
 
-  @media (max-width: 380px) {
-    .Newadd {
-      margin-left: 115px;
-    }
-  
-    .Newaddimg {
-      margin-left: 27px;
-    }
-  
-    .navbar-brand {
-      width: 332px;
-    }
+  .Newaddimg {
+    margin-left: 21px;
   }
 
-  @media (max-width: 330px) {
-    .Newadd {
-      margin-left: 91px;
-    }
-  
-    .Newaddimg {
-      margin-left: 27px;
-      margin-right: -23px;
-    }
-  
-    .navbar-brand {
-      width: 275px;
-    }
+  .navbar-brand {
+    width: 302px;
   }
+}
+
+@media (max-width: 380px) {
+  .Newadd {
+    margin-left: 115px;
+  }
+
+  .Newaddimg {
+    margin-left: 27px;
+  }
+
+  .navbar-brand {
+    width: 332px;
+  }
+}
+
+@media (max-width: 330px) {
+  .Newadd {
+    margin-left: 91px;
+  }
+
+  .Newaddimg {
+    margin-left: 27px;
+    margin-right: -23px;
+  }
+
+  .navbar-brand {
+    width: 275px;
+  }
+}
